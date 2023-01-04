@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
+html {
+  font-size: 10px;
+  background: url('./background.jpg') bottom center;
+  background-size: cover;
+  min-height: 100vh;
+
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+
+.heading {
+  padding: 3rem 7rem 0rem 7rem;
+  display: block;
+  justify-content: center;
+  font-family: 'Rubik Vinyl', cursive;
+  background: rgba(0, 0, 0, 0.4);
+
+
+}
+
+.heading h1 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.heading h1:after,
+.heading h1:before {
+  content: " ";
+  display: block;
+  border-bottom: 2px solid #f3dd04;
+  border-top: 2px solid #f3dd04;
+  height: 8px;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  margin-top: 30rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #f3dd04;
+  box-shadow: 0 0 1rem #f3dd04;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #f3dd04;
+}
